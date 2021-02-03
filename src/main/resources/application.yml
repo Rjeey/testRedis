@@ -1,0 +1,25 @@
+spring:
+  redis:
+    host: redis-16168.c114.us-east-1-4.ec2.cloud.redislabs.com
+    port: 16168
+    password: 9zLQCJbhmncpsEGShFXxyxsYtmvgl6rZ
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000
+      cache-null-values: true
+
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-54-78-45-84.eu-west-1.compute.amazonaws.com:5432/d9qcvair1ieknp
+    username: nkpkxluqbrfdqh
+    password: 7135b01b1975373a67a3f85bde272f20f82f11cce3cad7e4756381f6a053b487
+    hikari:
+      initialization-fail-timeout: 0
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
